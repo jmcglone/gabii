@@ -62,11 +62,11 @@
         }
 
         // Close menu on clicking outside menu
-        if (o.closeOnClickOutside) {
-             $(document).click(function() {
-                jPushMenu.close(o);
-             });
-         }
+        //if (o.closeOnClickOutside) {
+        //     $(document).click(function() {
+        //        jPushMenu.close(o);
+        //     });
+        //  }
 
         // Close menu on clicking menu link
         if (o.closeOnClickLink) {
