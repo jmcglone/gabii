@@ -1,9 +1,79 @@
+body {
+  font-family: 'EB Garamond', Georgia, serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar,
+footer {
+  font-family: 'Lato', Helvetica, sans-serif; }
+
+.navbar-default,
+footer {
+  background-color: #14181f;
+  color: #b7c7d9; }
+
+.navbar-default .navbar-brand {
+  color: #ffffff; }
+.navbar-default .navbar-nav > li > a {
+  color: #b7c7d9; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #777; }
+
+.navbar-brand {
+  font-weight: 700; }
+
+.wrapper p,
+.wrapper ul,
+.wrapper li,
+.wrapper blockquote,
+.wrapper table {
+  font-size: 18px; }
+
+.narrow {
+  width: 60%;
+  line-height: 2em; }
+
+footer {
+  padding-top: 3em;
+  padding-bottom: 2em;
+  margin-top: 3em; }
+
+.cbp-spmenu {
+  background-color: #777; }
+  .cbp-spmenu .glyphicon-chevron-left,
+  .cbp-spmenu .glyphicon-chevron-right,
+  .cbp-spmenu .glyphicon-fullscreen,
+  .cbp-spmenu .glyphicon-question-sign {
+    font-size: 3em;
+    color: #fff;
+    cursor: pointer; }
+  .cbp-spmenu .glyphicon-chevron-left,
+  .cbp-spmenu .glyphicon-chevron-right {
+    margin-top: 1em;
+    margin-left: .5em; }
+  .cbp-spmenu .glyphicon-fullscreen {
+    margin-top: 5em;
+    margin-left: .5em; }
+  .cbp-spmenu .glyphicon-question-sign {
+    margin-top: 1em;
+    margin-left: .5em; }
+
+.cbp-spmenu-vertical a {
+  border-bottom: #777; }
+
+.cbp-spmenu-vertical a:hover {
+  background: #777; }
+
 .cbp-spmenu-right {
   right: -90%; }
 
 .cbp-spmenu-vertical {
   width: 95%;
-  height: 500px;
-  top: 70px; }
+  height: 469px;
+  top: 60px; }
 
 /*# sourceMappingURL=custom.css.map */
