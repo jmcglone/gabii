@@ -10,21 +10,38 @@ h5,
 footer {
   font-family: 'Lato', Helvetica, sans-serif; }
 
+a {
+  color: #39688f;
+  border-bottom: 1px dotted #39688f; }
+
+a:hover {
+  color: #1e5667;
+  border-bottom: 1px solid #1e5667;
+  text-decoration: none; }
+
 .navbar-default,
 footer {
-  background-color: #14181f;
+  background-color: #1b2f43;
   color: #b7c7d9; }
 
 .navbar-default .navbar-brand {
   color: #ffffff; }
-.navbar-default .navbar-nav > li > a {
+  .navbar-default .navbar-brand img {
+    margin-top: -4px; }
+.navbar-default .navbar-brand:hover {
   color: #b7c7d9; }
+.navbar-default .navbar-nav > li > a {
+  color: #b7c7d9;
+  border-bottom: none; }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #777; }
+  color: #f0f4f5; }
 
 .navbar-brand {
   font-weight: 700; }
+
+a.navbar-brand {
+  border-bottom: none; }
 
 .wrapper p,
 .wrapper ul,
@@ -37,39 +54,51 @@ footer {
   width: 60%;
   line-height: 2em; }
 
+.unity-on {
+  margin-top: 38em; }
+
+.unity-off {
+  margin-top: 0em; }
+
 footer {
   padding-top: 3em;
   padding-bottom: 2em;
   margin-top: 3em; }
 
 .cbp-spmenu {
-  background-color: #777; }
+  background-color: #acb0b4;
+  border-left: 1px solid #9d9d9d;
+  border-top: 1px solid #9d9d9d;
+  border-bottom: 1px solid #9d9d9d; }
   .cbp-spmenu .glyphicon-chevron-left,
   .cbp-spmenu .glyphicon-chevron-right,
   .cbp-spmenu .glyphicon-fullscreen,
   .cbp-spmenu .glyphicon-question-sign {
-    font-size: 3em;
+    font-size: 2em;
     color: #fff;
     cursor: pointer; }
   .cbp-spmenu .glyphicon-chevron-left,
   .cbp-spmenu .glyphicon-chevron-right {
     margin-top: 1em;
-    margin-left: .5em; }
+    margin-left: 0.55em; }
   .cbp-spmenu .glyphicon-fullscreen {
-    margin-top: 5em;
-    margin-left: .5em; }
+    margin-top: 10em;
+    margin-left: 0.55em; }
   .cbp-spmenu .glyphicon-question-sign {
-    margin-top: 1em;
-    margin-left: .5em; }
+    margin-top: 1.5em;
+    margin-left: 0.55em; }
+  .cbp-spmenu .unity {
+    margin: 0 auto;
+    width: 87%; }
 
 .cbp-spmenu-vertical a {
-  border-bottom: #777; }
+  border-bottom: #acb0b4; }
 
 .cbp-spmenu-vertical a:hover {
-  background: #777; }
+  background: #acb0b4; }
 
 .cbp-spmenu-right {
-  right: -90%; }
+  right: -91%; }
 
 .cbp-spmenu-vertical {
   width: 95%;

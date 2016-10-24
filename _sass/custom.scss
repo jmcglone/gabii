@@ -8,8 +8,17 @@
   }
 
   // colors
-  $navy: #14181f;
+  //$navy: #14181f;
+  $navy: #1b2f43;
   $light-blue: #b7c7d9;
+  $off-white: #f0f4f5;
+  $grey: #acb0b4;
+  $dark-grey: #9d9d9d;
+  $link: #39688f;
+  $link-hover: #1e5667;
+
+  // margins
+  $unity-icons-left: .55em;
 
   // base
   body {
@@ -26,6 +35,17 @@
     @include lato;
   }
 
+  a {
+    color: $link;
+    border-bottom: 1px dotted $link;
+  }
+
+  a:hover {
+    color: $link-hover;
+    border-bottom: 1px solid $link-hover;
+    text-decoration: none;
+  }
+
   .navbar-default,
   footer {
     background-color: $navy;
@@ -35,20 +55,33 @@
   .navbar-default {
     .navbar-brand {
       color: #ffffff;
+
+      img {
+        margin-top: -4px;
+      }
+    }
+
+    .navbar-brand:hover {
+      color: $light-blue;
     }
 
     .navbar-nav>li>a {
       color: $light-blue;
+      border-bottom: none;
     }
 
   }
 
   .navbar-default .navbar-nav>li>a:hover {
-    color: #777;
+    color: $off-white;
   }
 
   .navbar-brand {
     font-weight: 700;
+  }
+
+  a.navbar-brand {
+    border-bottom: none;
   }
 
   .wrapper {
@@ -66,6 +99,14 @@
     line-height: 2em;
   }
 
+  .unity-on {
+    margin-top: 38em;
+  }
+
+  .unity-off {
+    margin-top: 0em;
+  }
+
   footer {
     padding-top: 3em;
     padding-bottom: 2em;
@@ -74,13 +115,16 @@
 
   // unity player
   .cbp-spmenu {
-    background-color: #777;
+    background-color: $grey;
+    border-left: 1px solid $dark-grey;
+    border-top: 1px solid $dark-grey;
+    border-bottom: 1px solid $dark-grey;
 
       .glyphicon-chevron-left,
       .glyphicon-chevron-right,
       .glyphicon-fullscreen,
       .glyphicon-question-sign {
-        font-size: 3em;
+        font-size: 2em;
         color: #fff;
         cursor: pointer;
       }
@@ -88,30 +132,35 @@
       .glyphicon-chevron-left,
       .glyphicon-chevron-right {
         margin-top: 1em;
-        margin-left: .5em;
+        margin-left: $unity-icons-left;
       }
 
       .glyphicon-fullscreen {
-        margin-top: 5em;
-        margin-left: .5em;
+        margin-top: 10em;
+        margin-left: $unity-icons-left;
       }
 
       .glyphicon-question-sign {
-        margin-top: 1em;
-        margin-left: .5em;
+        margin-top: 1.5em;
+        margin-left: $unity-icons-left;
+      }
+
+      .unity {
+        margin: 0 auto;
+        width: 87%;
       }
   }
 
   .cbp-spmenu-vertical a {
-    border-bottom: #777;
+    border-bottom: $grey;
   }
 
   .cbp-spmenu-vertical a:hover {
-    background: #777;
+    background: $grey;
   }
 
   .cbp-spmenu-right {
-    right: -90%;
+    right: -91%;
   }
 
   .cbp-spmenu-vertical {
