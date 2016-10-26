@@ -7,10 +7,12 @@
  */
 
 (function($) {
+    $('.text').addClass('unity-off');
     $.fn.jPushMenu = function(customOptions) {
         var o = $.extend({}, $.fn.jPushMenu.defaultOptions, customOptions);
 
         $('body').addClass(o.pushBodyClass);
+
 
         // Add class to toggler
         $(this).addClass('jPushMenuBtn' + ' ' + 'glyphicon-chevron-left');
@@ -57,7 +59,7 @@
         var jPushMenu = {
             close: function (o) {
                 $('.jPushMenuBtn,body,.cbp-spmenu')
-                    .removeClass('disabled ' + o.activeClass + ' ' + o.menuOpenClass + ' ' + o.pushBodyClass + '-toleft ' + o.pushBodyClass + '-toright');
+                    .removeClass('disabled ' + o.activeClass + ' ' + o.menuOpenClass + ' ' + o.pushBodyClass + '-toleft ' + o.pushBodyClass + '-toright' + 'unity-on');
 
             }
         }
