@@ -54,12 +54,13 @@ a.navbar-brand {
   width: 60%;
   line-height: 2em; }
 
-.unity-on {
-  margin-top: 38em; }
+  /* .unity-on {
+    margin-top: 38em;
+  }
 
-.unity-off {
-  margin-top: 0em; }
-
+  .unity-off {
+    margin-top: 0em;
+  } */
 footer {
   padding-top: 3em;
   padding-bottom: 2em;
