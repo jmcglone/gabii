@@ -13,7 +13,7 @@
         $('body').addClass(o.pushBodyClass);
 
         // Add class to toggler
-        $(this).addClass('jPushMenuBtn');
+        $(this).addClass('jPushMenuBtn' + ' ' + 'glyphicon-chevron-left');
 
         $(this).click(function(e) {
             e.stopPropagation();
@@ -58,6 +58,7 @@
             close: function (o) {
                 $('.jPushMenuBtn,body,.cbp-spmenu')
                     .removeClass('disabled ' + o.activeClass + ' ' + o.menuOpenClass + ' ' + o.pushBodyClass + '-toleft ' + o.pushBodyClass + '-toright');
+
             }
         }
 
@@ -86,9 +87,9 @@
         showRightClass     : 'menu-right',
         showTopClass       : 'menu-top',
         showBottomClass    : 'menu-bottom',
-        activeClass        : 'menu-active',
+        activeClass        : 'menu-active glyphicon-chevron-right',
         menuOpenClass      : 'menu-open',
-        closeOnClickOutside: true,
-        closeOnClickLink   : true
+        closeOnClickOutside: false,
+        closeOnClickLink   : false
     };
 })(jQuery);
