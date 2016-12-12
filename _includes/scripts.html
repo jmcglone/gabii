@@ -6,13 +6,47 @@
 
 {% if page.category == "unity" %}
   <script src="/assets/js/jPushMenu.js"></script>
+  <script src="/assets/js/bowser.min.js"></script>
 
   <script>
     jQuery(document).ready(function($) {
-	     $('.toggle-menu').jPushMenu();
+
+       $('.toggle-menu').jPushMenu();
 
        $( ".toggle-menu" ).click(function() {
          $( ".text" ).toggleClass( "unity-off" );
+       });
+
+       // accessibility mode
+       $( ".toggle-a11y").click(function() {
+        $("body").toggleClass("a11y");
+        $(".toggle-a11y").toggleClass("on");
+        if ($('body').hasClass('a11y')) {
+          // replace links to unity with links to database
+          $('a.unity').each(function() {
+             var su = $(this).attr('onclick');
+             $(this).attr('href', 'https://doi.org/10.3998/gabii.1.SU' + su)
+             .removeAttr('onlick');
+           });
+           // close menu if open
+           if ($('#unity-menu').hasClass('menu-open')) {
+             $( ".text" ).toggleClass( "unity-off" );
+             $( ".toggle-menu").removeClass( "menu-active glyphicon-chevron-right");
+             $( ".cbp-spmenu").removeClass( "menu-open");
+           }
+         } else {
+           // back to interactive mode
+           // replace links to database with links to unity
+           $('a.unity').each(function() {
+              var su = $(this).attr('href');
+              $(this).attr('onclick', 'back' + su)
+              .removeAttr('href');
+            });
+            // open menu
+            $( ".text" ).removeClass( "unity-off" );
+            $( ".toggle-menu").toggleClass( "menu-active glyphicon-chevron-right");
+            $( ".cbp-spmenu").toggleClass( "menu-open");
+         }
        });
 
     });

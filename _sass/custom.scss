@@ -70,6 +70,10 @@
       border-bottom: none;
     }
 
+    .navbar-nav>li>a.toggle-a11y.on::after {
+      content: " ON";
+    }
+
   }
 
   .navbar-default .navbar-nav>li>a:hover {
