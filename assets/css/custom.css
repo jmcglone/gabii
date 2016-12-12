@@ -12,11 +12,20 @@ footer {
 
 a {
   color: #39688f;
-  border-bottom: 1px dotted #39688f; }
+  border-bottom: 1px solid #39688f; }
 
 a:hover {
   color: #1e5667;
   border-bottom: 1px solid #1e5667;
+  text-decoration: none; }
+
+a.unity {
+  color: #39688f;
+  border-bottom: 1px dotted #39688f; }
+
+a.unity:hover {
+  color: #1e5667;
+  border-bottom: 1px dotted #1e5667;
   text-decoration: none; }
 
 .navbar-default,
@@ -24,17 +33,19 @@ footer {
   background-color: #1b2f43;
   color: #b7c7d9; }
 
-.navbar-default .navbar-brand {
-  color: #ffffff; }
-  .navbar-default .navbar-brand img {
-    margin-top: -4px; }
-.navbar-default .navbar-brand:hover {
-  color: #b7c7d9; }
-.navbar-default .navbar-nav > li > a {
-  color: #b7c7d9;
-  border-bottom: none; }
-.navbar-default .navbar-nav > li > a.toggle-a11y.on::after {
-  content: " ON"; }
+.navbar-default {
+  border-bottom: solid 10px #fff; }
+  .navbar-default .navbar-brand {
+    color: #ffffff; }
+    .navbar-default .navbar-brand img {
+      margin-top: -4px; }
+  .navbar-default .navbar-brand:hover {
+    color: #b7c7d9; }
+  .navbar-default .navbar-nav > li > a {
+    color: #b7c7d9;
+    border-bottom: none; }
+  .navbar-default .navbar-nav > li > a.toggle-a11y.on::after {
+    content: " ON"; }
 
 .navbar-default .navbar-nav > li > a:hover {
   color: #f0f4f5; }
@@ -63,9 +74,8 @@ a.navbar-brand {
   overflow-y: auto !important; }
 
 .text {
-  margin-top: 38em;
-  height: 20em;
-  overflow-y: scroll; }
+  transition: margin-top 0.4s ease;
+  margin-top: 38em; }
 
 footer {
   padding-top: 3em;
@@ -98,6 +108,10 @@ footer {
   .cbp-spmenu .unity {
     margin: 0 auto;
     width: 87%; }
+  .cbp-spmenu .unsupported {
+    width: 65%;
+    margin: 10em auto;
+    font-family: 'Lato', Helvetica, sans-serif; }
 
 .cbp-spmenu-vertical a {
   border-bottom: #acb0b4; }

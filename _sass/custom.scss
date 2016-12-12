@@ -37,12 +37,23 @@
 
   a {
     color: $link;
-    border-bottom: 1px dotted $link;
+    border-bottom: 1px solid $link;
   }
 
   a:hover {
     color: $link-hover;
     border-bottom: 1px solid $link-hover;
+    text-decoration: none;
+  }
+
+  a.unity {
+    color: $link;
+    border-bottom: 1px dotted $link;
+  }
+
+  a.unity:hover {
+    color: $link-hover;
+    border-bottom: 1px dotted $link-hover;
     text-decoration: none;
   }
 
@@ -53,6 +64,8 @@
   }
 
   .navbar-default {
+    border-bottom: solid 10px #fff;
+
     .navbar-brand {
       color: #ffffff;
 
@@ -111,9 +124,8 @@
   }
 
    .text {
+    transition: margin-top 0.4s ease;
     margin-top: 38em;
-    height: 20em;
-    overflow-y: scroll;
   }
 
 
@@ -160,6 +172,12 @@
       .unity {
         margin: 0 auto;
         width: 87%;
+      }
+
+      .unsupported {
+        width: 65%;
+        margin: 10em auto;
+        @include lato;
       }
   }
 
