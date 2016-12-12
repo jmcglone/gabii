@@ -10,6 +10,11 @@
   <script>
     jQuery(document).ready(function($) {
 	     $('.toggle-menu').jPushMenu();
+
+       $( ".toggle-menu" ).click(function() {
+         $( ".text" ).toggleClass( "unity-off" );
+       });
+
     });
   </script>
 

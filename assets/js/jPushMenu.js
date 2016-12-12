@@ -6,8 +6,9 @@
  * Original version (pure JS) is created by Mary Lou http://tympanus.net/
  */
 
+
 (function($) {
-    $('.text').addClass('unity-off');
+
     $.fn.jPushMenu = function(customOptions) {
         var o = $.extend({}, $.fn.jPushMenu.defaultOptions, customOptions);
 
@@ -59,19 +60,38 @@
         var jPushMenu = {
             close: function (o) {
                 $('.jPushMenuBtn,body,.cbp-spmenu')
-                    .removeClass('disabled ' + o.activeClass + ' ' + o.menuOpenClass + ' ' + o.pushBodyClass + '-toleft ' + o.pushBodyClass + '-toright' + 'unity-on');
-
+                    .removeClass('disabled ' + o.activeClass + ' ' + o.menuOpenClass + ' ' + o.pushBodyClass + '-toleft ' + o.pushBodyClass + '-toright ');
+                //$('body,.text')
+                //    .removeClass('unity-on').addClass('unity-off');
             }
         }
 
+        //$(function() {
+        //  var button = $('.toggle-menu')
+        //      , text = $('.text')
+        //  ;
+
+        //  button.on('click', function() {
+        //    text.removeClass('unity-on');
+        //    $(document).trigger('buttonClick');
+        //  });
+
+        //  $(document).on('buttonClick', function() {
+        //    text.addClass('unity-off');
+        //  });
+        //});
+
+
         // Close menu on clicking outside menu
-        //if (o.closeOnClickOutside) {
-        //     $(document).click(function() {
-        //        jPushMenu.close(o);
-        //     });
-        //  }
+        // Disabled
+        if (o.closeOnClickOutside) {
+             $(document).click(function() {
+                jPushMenu.close(o);
+            });
+          }
 
         // Close menu on clicking menu link
+        // Disabled
         if (o.closeOnClickLink) {
             $('.cbp-spmenu a').on('click',function() {
                 jPushMenu.close(o);
