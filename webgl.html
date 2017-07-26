@@ -1,0 +1,28 @@
+---
+layout: webgl
+title: WebGL Test
+---
+<div class="webgl-content">
+  <div id="gameContainer" style="width: 1024px; height: 600px"></div>
+  <div class="footer">
+    <div class="webgl-logo"></div>
+    <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+    <div class="title">Area B House</div>
+  </div>
+</div>
+
+ <script type="text/javascript">
+SendMessage = gameInstance.SendMessage;
+    // Wait for the page to load first
+   function getToUnity(s)
+   {
+
+SendMessage ("WebCommunicator", "ShowString", s);
+
+     }
+
+</script>
+
+
+
+ <a onclick="getToUnity('2')"  >2</a>  
